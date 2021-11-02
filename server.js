@@ -15,7 +15,7 @@ const app = express()
 const port = process.env.PORT || 8080
 
 app
-// .use(requireHTTPS) // kalau dijalankan secara local, comment line ini
+.use(requireHTTPS) // kalau dijalankan secara local, comment line ini
 // nama app mengikuti di package.json
 .use(express.static('./dist/todo-app'))
 
